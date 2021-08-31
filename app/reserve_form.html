@@ -4,3 +4,145 @@ layout: ./app/layout.ejs
 engine: ejs
 current: reserve_form
 ---
+<div class="container">
+    <h3 class="mt-8 mb-5 mb-md-3 text-center">立即預約</h3>
+    <ul class="reservation-step-list list-unstyled d-flex justify-content-md-center mb-7">
+        <li class="reservation-step-items text-secondary bg-light d-flex justify-content-center align-items-center border-radius-pill rounded-4 me-3 me-md-12">
+            <h7 class="">選擇方案</h7>
+        </li>
+        <li class="reservation-step-items text-white bg-secondary d-flex justify-content-center align-items-center border-radius-pill rounded-4 me-3 me-md-12">
+            <h7>填寫資料</h7>
+        </li>
+        <li class="reservation-step-items text-secondary bg-light d-flex justify-content-center align-items-center border-radius-pill rounded-4 me-3">
+            <h7>完成預約</h7>
+        </li>
+    </ul>
+    <div class="reserve-form-course d-flex justify-content-center mb-5">
+        <h7 class="text-dark me-3">你選擇的是</h7>
+        <h6 class="text-primary">首次體驗課程-基礎</h6>
+    </div>
+    <ul class="list-unstyled text-dark">
+        <li class="reserve-form-items mb-3">
+            <h7>1. 是否接觸過瑜珈?</h7>
+        </li>
+        <li class="reserve-form-items d-flex mb-7">
+            <div class="form-check me-7">
+                <input class="form-check-input" type="radio" name="contact-yoga" id="contact-yoga1">
+                <label class="form-check-label" for="contact-yoga1">
+                    是
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="contact-yoga" id="contact-yoga2" checked>
+                <label class="form-check-label" for="contact-yoga2">
+                    否
+                </label>
+              </div>
+        </li>
+        <li class="reserve-form-items mb-3">
+            <h7>2. 想改善的生活問題?</h7>
+        </li>
+        <li class="reserve-form-items d-flex mb-3">
+            <div class="form-check me-13">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    肌耐力不足
+                </label>
+            </div>
+            <div class="form-check me-13">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    柔軟度不佳
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    壓力大
+                </label>
+            </div>            
+        </li>
+        <li class="reserve-form-items d-flex mb-7">
+            <div class="form-check me-13">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    姿勢不正
+                </label>
+            </div>
+            <div class="form-check me-13">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    睡眠品質差
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    注意力不足
+                </label>
+            </div>
+        </li>
+        <li class="reserve-form-items mb-3">
+            <h7>3. 每週累積運動量約為多少？</h7>
+        <li class="reserve-form-items d-flex mb-3">
+            <div class="form-check me-7">
+                <input class="form-check-input" type="radio" name="sport-time" id="sport-time1">
+                <label class="form-check-label" for="sport-time1">
+                    150 分鐘以上
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sport-time" id="sport-time2" checked>
+                <label class="form-check-label" for="sport-time2">
+                    75~150 分鐘
+                </label>
+              </div>
+        </li>
+        <li class="reserve-form-items d-flex mb-7">
+            <div class="form-check me-9">
+                <input class="form-check-input" type="radio" name="sport-time" id="sport-time3">
+                <label class="form-check-label" for="sport-time3">
+                    30~75 分鐘
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sport-time" id="sport-time4" checked>
+                <label class="form-check-label" for="sport-time4">
+                    30 分鐘以下
+                </label>
+              </div>
+        </li>
+        </li>
+        <li class="reserve-form-items mb-1">
+            <h7>4. 上課預約報到日</h7>
+        </li>
+        <li class="reserve-form-items mb-2">
+            <p class="fs-8 mb-0">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+        </li>
+        <li class="reserve-form-items">
+            <h7>5. 填寫基本資料，完成預約後會寄送通知至電子信箱</h7>
+        </li>
+        <li>
+            <ul class="reserve-form-items list-unstyled d-flex">
+                <li class="me-2">
+                    <h7>姓名</h7>
+                </li>
+                <li>
+                    <h7>年齡</h7>
+                </li>
+            </ul>
+        </li>
+        <li class="reserve-form-items">
+            <h7>性別</h7>
+        </li>
+        <li class="reserve-form-items">
+            <h7>電子信箱</h7>
+        </li>
+        <li class="reserve-form-items">
+            <h7>手機號碼</h7>
+        </li>
+        <li class="reserve-form-items">
+            <button class="btn">送出</button>
+        </li>
+    </ul>
+</div>
