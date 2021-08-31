@@ -1,0 +1,163 @@
+//------banner---------
+.banner {
+  background-image: url(../images/hero/Banner.jpeg);
+  height: 560px;
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  h2 {
+    margin-top: 10px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 582px;
+  }
+}
+
+// .index__h1 {
+//   color:#00cc99;
+//   font-size: 20px;
+//   font-weight: 400;
+// }
+//感受身心 起點
+
+
+
+.impact1 {
+  border-radius: $border-radius-xl;
+  
+  height: 420px;
+  width: 345px;
+  @include pad {
+    height: 252px;
+    width: 210px;}
+  @include pc {
+    height: 420px;
+    width: 350px;
+  }
+}
+
+
+.titleimpact {
+  color: #fff;
+  font-weight: 200;
+  @include pad {
+    font-size: $font-size-base;}
+    @include pc {
+    font-size:20px;
+    }
+}
+.textimpact {
+  color: #fff;
+  font-size: $font-size-base;
+  font-weight: 200;
+}
+//感受身心 終點
+// 頂尖師資 起點~~~
+.doyoga-teachers-img{
+  object-fit : cover;
+  width: 50%;
+  height: 628px;
+}
+.teacher-one{
+  @include pad{
+    width: 90%;
+  }
+  @include pc{
+    margin-left: -85px;
+    width: 118%;
+  }
+  &-img{
+    width: 48px;
+    height: 48px;
+    @include pad{
+      width: 94px;
+      height: 94px;
+    }
+  }
+}
+.teacher-others{
+  width: 100%;
+  @include pad{
+    width: 80%;
+  }
+  @include pc{
+    width: 100%;
+  }
+  &-img{
+    width: 48px;
+    height: 48px;  
+    @include pad{
+      width: 68px;
+      height: 68px;
+    }
+  }
+}
+// 頂尖師資 終點~~~
+
+//舒適空間
+
+.nice-space-text {
+  @include media-breakpoint-up(lg) {
+    padding: 145px 0px !important;
+  }
+}
+
+//舒適空間 end
+
+// course
+.course {
+  @include media-breakpoint-down(lg) {
+    padding: map-get($spacers, 10) 0;
+  }
+  @include media-breakpoint-down(md) {
+    padding: map-get($spacers, 9) 0;
+  }
+}
+// course end
+
+//方案選擇 起點~~~
+.plan-choose-img {
+  .img-fluid {
+    object-fit: cover;
+  }
+  .radius-top {
+    border-radius: 16px 16px 0 0;
+    @include pad {
+      border-radius: 16px 0 0 16px;
+    }
+    @include pc {
+      border-radius: 16px 16px 0 0;
+    }
+  }
+}
+//方案選擇 end
+
+// 聽聽他們怎麼說
+.customer-response {
+  padding-bottom: 96px;
+  .card {
+    display: flex;
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    content: "\f1df";
+    font-family: "Material Icons";
+    position: absolute;
+    top: 280px;
+    right: 5px;
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    content: "\f1e6";
+    font-family: "Material Icons";
+    position: absolute;
+    top: 280px;
+    left: 5px;
+  }
+}
+
+// 聽聽他們怎麼說 end
