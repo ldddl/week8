@@ -21,7 +21,7 @@ current: reserve_form
         <h7 class="text-dark me-3">你選擇的是</h7>
         <h6 class="text-primary">首次體驗課程-基礎</h6>
     </div>
-    <ul class="list-unstyled text-dark">
+    <ul class="reserve-form-list list-unstyled text-dark">
         <li class="reserve-form-items mb-3">
             <h7>1. 是否接觸過瑜珈?</h7>
         </li>
@@ -116,33 +116,68 @@ current: reserve_form
         <li class="reserve-form-items mb-1">
             <h7>4. 上課預約報到日</h7>
         </li>
-        <li class="reserve-form-items mb-2">
-            <p class="fs-8 mb-0">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+        <li class="reserve-form-items mb-7">
+            <p class="fs-8 mb-2">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+            <button class="reserve-form-items-btn-date border-primary text-secondary btn">MM/DD/YYYY</button>
         </li>
-        <li class="reserve-form-items">
+        <li class="reserve-form-items mb-3">
             <h7>5. 填寫基本資料，完成預約後會寄送通知至電子信箱</h7>
         </li>
-        <li>
+        <li class="mb-3">
             <ul class="reserve-form-items list-unstyled d-flex">
                 <li class="me-2">
-                    <h7>姓名</h7>
+                    <ul class="list-unstyled ">
+                        <li class="mb-2">
+                            <h7>姓名</h7>
+                        </li>
+                        <li>
+                            <input class="text-primary reserve-form-items-material" type="text" placeholder="請輸入您的姓名">
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <h7>年齡</h7>
+                    <ul class="list-unstyled ">
+                        <li class="mb-2">
+                            <h7>年齡</h7>
+                        </li>
+                        <li>
+                            <input class="text-primary reserve-form-items-material" type="text" placeholder="請輸入您的姓名">
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </li>
-        <li class="reserve-form-items">
+        <li class="reserve-form-items mb-2">
             <h7>性別</h7>
         </li>
-        <li class="reserve-form-items">
+        <li class="reserve-form-items mb-3">
+            <div class="btn-group">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle border-primary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        女
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">男</a></li>
+                      <li><a class="dropdown-item" href="#">女</a></li>
+                    </ul>
+                  </div>
+        </li>
+        <li class="reserve-form-items mb-2">
             <h7>電子信箱</h7>
         </li>
-        <li class="reserve-form-items">
+        <li class="reserve-form-items mb-3">
+            <input class="text-primary reserve-form-items-material" type="text" placeholder="email@example.com">
+        </li>
+        <li class="reserve-form-items mb-2">
             <h7>手機號碼</h7>
         </li>
-        <li class="reserve-form-items">
-            <button class="btn">送出</button>
+        <li class="reserve-form-items mb-7">
+            <input class="text-primary reserve-form-items-material" type="text" placeholder="0912-345-678">
+        </li>
+        <li class="reserve-form-items mb-15 mb-md-14 mb-lg-16">
+            <div class="d-grid gap-2">
+                <button class="btn bg-primary text-white">送出</button>
+              </div>
         </li>
     </ul>
 </div>
