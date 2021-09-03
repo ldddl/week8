@@ -24190,6 +24190,12 @@ body {
   height: 31px;
 }
 
+.sideicon {
+  position: fixed;
+  right: 16px;
+  bottom: 600px;
+}
+
 .reservation-step-items {
   width: 104px;
   height: 48px;
